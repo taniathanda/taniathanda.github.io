@@ -1,0 +1,351 @@
+*{
+   padding: 0px;
+   margin: 0px; 
+}
+body, h2, h3, p{
+    margin: 0; padding: 0;
+}
+
+/*---------------------------------------------------start nav---------------*/
+.navlogo{
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+.nav_item{
+    float: right;
+}
+.nav_item li{
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+.nav_item li a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.nav_item li a:hover{
+    color: red;
+}
+.cart_nav_item{
+    margin-right: 150px;
+}
+.cart_noti{
+    position: relative;
+    top: -15px;
+    right: 160px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: chartreuse;
+    font-size: x-small;
+}
+/*----------------------------------------------------end nav----------------*/
+
+/*---------------------------------------------------start banner---------------*/
+.carousel_img{
+    width: 100%; height: 60%;
+}
+.carousel_text{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: white;
+    background-color: hsla(0, 2%, 35%, 0.302);
+    padding: 40px;
+    font-size: small;
+}
+.carousel_text h2{
+    margin-bottom: 15px;
+}
+.shopnow{
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.shopnow:hover{ 
+    cursor: pointer;
+} 
+/*---------------------------------------------------end banner---------------*/
+/*---------------------------------------------------start service---------------*/
+.service{
+    margin: 50px 150px 0px;
+    border: 0px solid gray;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px; 
+}
+.service div{
+    border: 1px solid black;
+    border-radius: 5px; 
+    padding: 10px; /*bottom left right top*/
+}
+.service_text{
+    display: inline-block;
+    margin-left: 20px;
+}
+.service_title{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.service_desc{
+    color: grey;
+}
+/*---------------------------------------------------end service---------------*/
+
+/*---------------------------------------------------Start Promotion---------------*/
+.promotion_title{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.divided{
+    width: 80px;
+    border: 2px solid red;
+    margin-left: 150px;
+}
+.promotion{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0px 150px;
+    grid-column-gap: 20px;
+}
+.promotion_image{
+    width: 100%;
+}
+.promotion_item{
+    border: 1px solid grey;
+    border-radius: 5px; 
+    position: relative;
+}
+.promotion_item p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.promotion_price{
+    position: absolute;
+    top: 10px;
+    right: 5px; 
+}
+.discount_price{
+    display: block;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: red;
+}
+.normal_price{
+    color: red;
+    text-decoration: line-through;
+}
+/*---------------------------------------------------End Promotion---------------*/
+/*---------------------------------------------------Start New Arrival---------------*/
+.newarrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 15px 150px;
+    grid-column-gap: 30px;
+}
+.newarrival-item{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0px 20px 10px;
+    position: relative;
+}
+.newarrival-text{
+    display: inline-block;
+}
+.itemheart{
+    float: right;
+}
+.newarrival-image{
+    width: 100%; 
+}  
+.newarrival-icon{
+    position: absolute;
+    top: 50%;
+    left:40%;
+    opacity: 0;
+} 
+.newarrival-icon a{
+    border: 2px solid red;
+    background-color: gray;
+    color: red;
+    padding: 10px;
+    border-radius: 5px; 
+}
+.newarrival-icon a:hover{
+    background-color: red;
+    color: white;
+}
+.newarrival-item:hover .newarrival-icon{
+    opacity: 1;
+}
+.newarrival-image:hover{
+    opacity: .6;
+}
+/*---------------------------------------------------End New Arrival---------------*/
+/*---------------------------------------------------Start Subscriber---------------*/
+.subscriber{
+    background-color: red;
+    padding: 90px 20px; 
+} 
+.subtext-loc{
+    position: absolute;
+    top: 2700px;
+}
+.sublogo-loc{
+    position: absolute;
+    top: 2700px;
+    left: 900px;
+}
+.subscriber div{
+    width: 40%;
+    margin-left: 300px; 
+    color: white;  
+}
+.subscriber div p{
+    margin-top: 5px;
+    width: 70%;
+    margin-bottom: 10px;
+} 
+.subscriber_input{
+    width: 400px;
+    height: 25px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px; 
+}
+.subscriber_btn{
+    height: 30px;
+    width: 100px;
+    color: white;
+    outline: none;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 0px 5px 5px 0px;
+}
+/*---------------------------------------------------End Subscriber---------------*/
+/*---------------------------------------------------Start News-------------------*/
+.news{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px; 
+    border-radius: 5px; 
+    /*margin: 20px 40px 20px;*/
+    margin-left: 100px; 
+    margin-right: 20px;  
+} 
+.newsimage-div{
+    width: 100%;
+    height: 30%;
+}
+.newsimage-hover{
+    overflow: hidden;
+    display: inline-block;
+}
+.new-img{
+    width: 100%;
+} 
+.news-text{
+    /*padding: 20px 20px 20px;*/
+    margin-top: 300px;
+}
+/*.news-text h3{
+    margin-bottom: 10px;
+}*/
+/*.news-text p{
+    /*padding: 5px 0px 10px;*/  
+    /*margin-top: 250px; 
+}*/
+.news-date{
+    opacity: .7;
+    font-style: italic;
+    font-size: 14px;
+}
+.news > div{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.read-more{
+    border: 1px solid red;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 5px;  
+    float: right;
+}
+.read-more:hover{
+    background-color: white;
+    color: red;
+}
+.new-img:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+
+
+
+
+/*---------------------------------------------------End News---------------------*/
+
+/*---------------------------------------------------Start Footer-----------------*/
+.footer{
+    background-color: black;
+    margin-top: 50px;
+    color: white;
+    /*padding: 80px 0px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 800px 200px 200px auto;  
+    margin-top: 20px;
+}
+.footer-about{
+    margin-left: 100px;
+}
+.divided-footer{
+    width: 80px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.footer-about p{
+    width: 100%;
+    line-height: 25px;
+}
+.footer-nav-item{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin-top: 15px; 
+    margin-left: 30px;
+}
+.footer-address{ 
+    margin-right: 10px;
+}
+.address-icon{
+    padding-right: 10px;
+}
+.footer-social-icon a{
+    color: white;
+    margin-top:20px;
+}
+
+
+
+/*---------------------------------------------------End Footer-------------------*/
