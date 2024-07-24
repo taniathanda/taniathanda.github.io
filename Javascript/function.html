@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function name</h1>
+    <script>
+        function fullname(){
+            document.write("My Name is Tania");
+        }
+
+        fullname();
+
+        //parameter function
+        function sum(one,two)
+        {
+            let result = one + two;
+            document.write(`Your Sum result is = ${result} <br>`);
+
+        }
+        sum(5,8);
+        
+        //default parameter function
+        function sub(num1=100,num2=50){
+            document.write(`Your Sub result is ${num1 - num2} <br>`);
+        }
+        sub();
+
+        //return function
+        function multi(num1,num2){
+            let result = num1 * num2;
+            return result;
+        }
+        let multiresult = multi(2,5);
+        document.write("My multi result is = " + multiresult + "<br>");
+    </script>
+</body>
+</html>
