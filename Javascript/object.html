@@ -12,6 +12,7 @@
             something1 : "value1",
             something2 : "value2",
         }
+
         //object
         let hotel = {
             name : "Lottle Hotel",
@@ -20,15 +21,17 @@
             gym : true,
             roomtype : ['Twin,Double,Family'],
             checkRoom : function(){
-                return this.rooms - this.booked;
+                return this.room - this.booked;
             },
-            carParking : carParkingList
+            carParking : carParkingList // object in object
         }
         document.write(`Hotel Name is ${hotel.carParking.something1}`)
 
         let result = hotel.checkRoom();
+        document.write(result)
         console.log(hotel.carParking.something1);
 
+        //object in array
         // let hotelarraylist = [
         //     {
         //         name : "Lotte Hotel",

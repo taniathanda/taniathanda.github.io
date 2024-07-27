@@ -1,0 +1,637 @@
+*{
+    padding: 0px;
+    margin: 0px; 
+ }
+.nav{
+    background-color:hwb(34 53% 13%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 100%;  
+    color: burlywood;
+}  
+.navlogo{
+    width: 200px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-bottom: -5px;
+    border: 3px solid darkgray;
+    border-radius: 15px 15px 15px 15px;
+}
+.nav_firstlineitem{ 
+    float: right;
+} 
+.nav_firstlineitem li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 50px; 
+}
+.nav_secondlineitem{
+    float: right; 
+} 
+.nav_secondlineitem li{
+    display: inline-block; 
+    padding:5px 20px 15px 10px; 
+    margin-top: -20px;
+    background-color: blanchedalmond;  
+}
+.nav_secondlineitem li a{
+    text-decoration: none;
+    font-size: 18px; font-family:Georgia;
+    color: black;
+}
+.nav_firstlineitem li a{
+    text-decoration: none;
+    font-size: 18px; font-family:Georgia;
+    color: black;  
+} 
+.nav_firstlineitem li a:hover{
+    background-color: bisque;
+}
+.nav_secondlineitem li a:hover{
+    background-color: hsla(0, 2%, 35%, 0.302);
+}
+/*--------start minor pages header----------*/
+.minarPageNav{
+    background-color: hwb(0 24% 75%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 100%;  
+    color: lightgray;
+} 
+.minorPage_firstlineitem{ 
+    float: right;
+} 
+.minorPage_firstlineitem li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 50px; 
+}
+.minorPage_secondlineitem{
+    float: right; 
+} 
+.minorPage_secondlineitem li{
+    display: inline-block; 
+    padding:5px 20px 15px 10px; 
+    margin-top: -20px; 
+}   
+.minorPage_secondlineitem li a{
+    text-decoration: none;
+    font-size: 18px; font-family:Georgia;
+    color: white;
+}
+.minorPage_firstlineitem li a{
+    text-decoration: none;
+    font-size: 18px; font-family:Georgia;
+    color: white;
+} 
+.minorPage_firstlineitem li a:hover{
+    background-color: bisque;
+    color: black;
+}
+.minorPage_secondlineitem li a:hover{
+    background-color: bisque;
+    color: black;
+}
+/*--------end minor pages header------------*/
+.searchbox_input{
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.search_btn{
+    height: 44px;
+    width: 50px;
+    color: white;
+    outline: none;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 20px;
+    font-size: 18px; font-family:Georgia;
+}
+
+.body-section{
+    background-color: hwb(34 53% 13%);;
+}
+.homepage-img{
+    width: 80%;
+    
+    float: right;
+}
+.homepage-title{
+     font-family: Verdana; font-size: 40px; 
+}
+.hometitle-section{
+    
+    background-color: hwb(34 53% 13%); 
+}
+.homepage-text{ 
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: white;
+    background-color: hsla(0, 2%, 35%, 0.302);
+    padding: 40px;
+    font-size: xx-large;
+}
+.home-localstudent{
+    position: absolute;
+    top: 320px;
+    left: 50px;  
+    background-color: hsla(0, 2%, 35%, 0.302);
+    padding: 20px;
+    font-size: x-large;
+}
+.home-localstudent a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px 5px 5px ;
+}
+.home-localstudent a:hover{
+    background-color: rgb(165, 96, 5); 
+}
+.home-interstudent{
+    position: absolute;
+    top: 400px;
+    left: 50px;  
+    background-color: hsla(0, 2%, 35%, 0.302);
+    padding: 20px;
+    font-size: x-large;
+}
+.home-interstudent a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px 5px 5px ;
+}
+.home-interstudent a:hover{
+    background-color: rgb(165, 96, 5); 
+}
+
+/* About html*/
+.about-startdivided{
+    width: 500px;
+    border: 5px solid black;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.about-enddivided{
+    width: 700px;
+    border: 5px solid black;
+    margin-left: 150px; 
+}
+.backtomain{
+    text-decoration: none;
+    font-size: 18px; font-family:Georgia;
+    color: black;   
+    background-color:red;   
+    margin-left: 150px;
+     
+}
+.backtomain:hover{
+    background-color:white;
+}
+.about-header{
+    margin-left: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 50px;   font-family:Arial;
+}
+.about-intro{
+    font-size: 18px;   font-family:Arial;
+    margin-left: 150px; margin-right: 20px;
+    margin-top: 20px; 
+    display: block;
+    unicode-bidi: isolate; 
+}
+.about-body{
+    background-color:blanchedalmond;    
+}
+.inline-image {
+    /* width: 35%; height:45%;*/
+    width: 40%; height:20%;  
+    float: left;
+    margin: 0 15px 15px 0;
+    border: 2px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    /*max-width: 150px; /* Adjust the width as needed */
+}
+/*-------------------------------------------------------css for contact.html---------------------------------------------------*/
+.contactgrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0px 150px;
+    grid-column-gap: 20px;
+}
+.contactlogo{
+    width: 50%;
+    height: 50%;
+}
+.contactgrid-p{
+    text-decoration: none;
+    font-size: 25px; font-family:Cambria ;
+    color: black;   
+}
+.logotext{
+    font-size: 18px; font-family:Cambria ;
+}
+.enquiryform{
+    margin-left: 150px;
+    margin-right: 30px;
+    font-size: 18px;   font-family:Georgia; 
+    color: black;  
+}
+.contact-dropdown{
+    width: 80%; height: 40px;
+    font-size: 18px;   font-family:Georgia; 
+    color: black; 
+    outline: none;
+    border-radius: 5px 5px 5px 5px; 
+}
+.starlabel{
+    font-size: 18px;   font-family:Georgia; 
+    color: red;
+}
+.lastnamelabel{
+    margin-left: 300px;
+}
+.textboxstyle{
+    width: 30%; height: 30px;
+    outline: none;
+    border-radius: 5px 5px 5px 5px; 
+}
+.lastnameInput{
+    width: 30%; height: 30px;
+    outline: none;
+    border-radius: 5px 5px 5px 5px; 
+}
+.InquiryInput{ 
+    width: 90%; height: 90px; 
+    outline: none;
+    border-radius: 5px 0px 0px 5px; 
+}
+.submitbtn{
+    width: 80px; height:40px;
+    border-radius: 5px 5px 5px 5px; 
+    font-size: 18px;   font-family:Georgia; 
+    background-color: lightgray;
+    color: black; 
+}
+.submitbtn:hover{
+    background-color:black;
+    color: white;
+}
+/*-------------------------------------------------------css for footer---------------------------------------------------*/
+.footer{
+    background-color: hwb(0 24% 75%); 
+    margin-top: 50px;
+    color: white;
+    /*padding: 80px 0px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 800px 200px 200px auto;  
+    margin-top: 20px;
+}
+.footer-address{ 
+    margin-right: 10px;
+    width: 250px;
+    color: white;
+    font-size: 14px;   font-family:Cambria;
+}
+ 
+.footer-social-icon a{
+    color: white;
+    margin-top:5px;
+    float: left;
+}
+.address{
+    color: white;
+    font-size: 20px;   font-family:Georgia; 
+    margin-left: -95px;
+} 
+/*----------------------------------------------------------Programs and Courses--------------------------------------------*/
+.fulldivided{
+    width: 100%;
+    border: 2px solid darkgray;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.credentials{
+    width: 100px;
+    margin-left: 970px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;   font-family:Georgia; 
+     
+}
+.location{ 
+    width: 100px;
+    margin-left: 168px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;   font-family:Georgia;  
+}  
+.coursegrid{
+    margin: 50px 150px 0px;
+    border: 0px solid gray;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px; 
+}
+.coursegrid img{
+    width: 220px;
+    height: 120px;
+    margin-top: -30px;
+}
+.coursegrid h2{
+    margin-top: -30px;
+    margin-left: -10px;
+}
+.coursedesc{
+    margin-left: -10px;
+    width: 500px;
+    font-size: 18px;   font-family:Georgia;  
+}
+.credentialP{
+    margin-left: 50px;
+    font-size: 18px;   font-family:Georgia;
+    width: 200px;
+}
+.locationP{
+    margin-left: 40px;
+    font-size: 18px;   font-family:Georgia;
+    width: 200px;
+}
+.pageBtn{
+    width: 30px;
+    height: 40px; 
+    padding: 10px 10px 10px 10px;
+    background-color:antiquewhite;
+}
+.pageBtn1{
+    width: 30px;
+    height: 40px; 
+    padding: 10px 10px 10px 10px;
+    margin-left: 150px;
+    background-color:antiquewhite;
+}
+.pageBtn:hover{
+    background-color: black;
+    color: white;
+}
+.pageBtn1:hover{
+    background-color: black;
+    color: white;
+}
+ 
+/*-----------------------------------------------------------------why.html-------------------------------------------------0*/
+.aboutinline-image {
+    width: 40%; height:20%; 
+    margin-left: 30px;
+    margin-top: 20px; 
+    float: right;
+}
+
+.campusdiv{
+    width: 50%; height:30%;
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px; 
+    background-color: darkgrey;
+}
+.why-startdivided{
+    width: 700px;
+    border: 5px solid black; 
+    margin-top: 50px; margin-right: 20px;
+    float: right;
+}
+.why-enddivided{
+    width: 1100px;
+    border: 5px solid black;
+    margin-right: 20px;
+    float: right; 
+    /* margin-top: 20px; */
+}
+.why-header1{ 
+    float: right;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-size: 50px;   font-family:Georgia; 
+}
+.signatureP{ 
+    font-size: 18px;   font-family:Georgia; 
+    margin-left: 150px;   
+    margin-top: 180px;
+     display: block;
+    unicode-bidi: isolate; 
+}
+.signatureImg{
+    width: 50%; height:20%;  
+    margin-left: 200px; 
+    border: 2px solid gray;
+    border-radius: 5px 5px 5px 5px;
+    float: right;
+}
+/*------------------------------------------international.html----------------------*/
+.h2header{
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;   font-family:Arial;
+}
+.headerCol1{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: -250px;
+    font-size: 18px;   font-family:Arial;
+}
+.headerCol2{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: -200px;
+    font-size: 18px;   font-family:Arial;
+}
+.headerCol3{
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;   font-family:Arial;
+}
+.headerCol4{
+    width: 300px;
+    margin-left: -50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: -400px;
+    font-size: 18px;   font-family:Arial;
+}
+.fulldivided{
+    width: 87%;
+    border: 3px solid black;
+    margin-left: 150px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.interGrid{
+    margin: 10px 150px 0px;
+    border: 0px solid gray;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px; 
+}
+.inter-divided{
+    width: 500px;
+    border: 5px solid black;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.feesCol2{
+    width: 350px;
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;   font-family:Arial;
+}
+.feesCol3{
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;   font-family:Arial;
+}
+/*-----------------------------------------------------support.html----------------------------------------------------*/
+.support-startdivided{
+    width: 700px;
+    border: 5px solid black; 
+    margin-top: 40px; float: right;
+    margin-right: 20px;
+}
+.support-enddivided{
+    width: 1100px;
+    border: 5px solid black; 
+    float: right; margin-right: 20px; 
+}
+.support-header1{  
+    margin-left:300px;
+    margin-top: 10px;
+    margin-right: 20px;
+    /* margin-bottom: 15px; */
+    float: right;
+    font-size: 50px;   font-family:Georgia; 
+}
+.healthGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left:100px;
+    margin-top: 140px;
+    margin-right: 20px;
+    grid-column-gap: 40px; 
+}  
+.healthgrid_image{
+    /* width: 500px; height: 350px; */
+    width: 100%;
+}
+.healthgrid_item{
+    border: 1px dashed lightgray;
+    border-style: groove;
+    border-radius: 5px; 
+    margin-left: 50px;
+    margin-top: 30px;
+    position: relative;
+    width: 550px;  
+}
+.healthgrid_item p{
+    text-align:left;
+    margin-left:20px;
+    padding-bottom: 20px;
+    font-size: 18px;   font-family:Arial;
+}
+.healthgrid_item h2{
+    margin-left: 20px;
+    text-align:left;
+    font-size: 25px;   font-family:Georgia;
+}
+.supportGrid2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left:100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    grid-column-gap: 40px;
+}
+/*----------------------------------------------------------------ambassador.html----------------------------------------*/
+.ambassadorGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left:100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    grid-column-gap: 20px; 
+}
+.ambassador-img{
+    margin-top: 20px; margin-left: 90px;     
+    border: 2px solid gray;
+    border-radius: 100px 30px 30px 30px;
+    display: block;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Adjust the width and height as needed */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #000;
+}
+.ambassador-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ambassGrid_item{
+    border: 1px solid grey;
+    border-radius: 5px; 
+    margin-left: 50px;
+    margin-top: 30px;
+    position: relative;
+    width: 400px;  
+}
+.ambassGrid_item h2,h3{
+    text-align: center;
+}
+.ambassGrid_item h4{
+    color: red;
+    text-align: center;
+    text-decoration: double;
+}
+.ambassGrid_item p{
+    font-size: 14px;   font-family:Arial;
+    margin-left: 10px; margin-right: 10px;
+}
+.content {
+    display: none; /* Hide all divs by default */
+}
+
+.content.active {
+    display: block; /* Show the active div */
+}
+
+
+
+ 
+ 
+
+
+ 

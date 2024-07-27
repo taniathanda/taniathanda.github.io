@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Divs</title>
+    <link rel="stylesheet" href="common.css"> 
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="showDiv('div1')">Page 1</button>
+        <button onclick="showDiv('div2')">Page 2</button>
+        <button onclick="showDiv('div3')">Page 3</button>
+    </div>
+    <div class="main">
+        <div id="div1" class="content">
+            <p>Dreamscape staff and faculty are here to support you along your post-secondary journey and beyond. 
+                Do you have a question but are not sure where to start? Choose from one of the options</p>
+        </div>
+        <div id="div2" class="content">
+            <p>Dreamscape staff and faculty are here to support you along your post-secondary journey and beyond. 
+                Do you have a question but are not sure where to start? Choose from one of the options</p>
+        </div>
+        <div id="div3" class="content">
+            <p>Dreamscape staff and faculty are here to support you along your post-secondary journey and beyond. 
+                Do you have a question but are not sure where to start? Choose from one of the options</p>
+        </div>
+    </div> 
+    
+    <script>
+       function showDiv(divId) {
+            // Hide all content divs
+            const contentDivs = document.querySelectorAll('.content');
+            contentDivs.forEach(div => {
+                div.classList.remove('active');
+            });
+
+            // Show the selected div
+            const selectedDiv = document.getElementById(divId);
+            selectedDiv.classList.add('active');
+        }
+
+        // Initially show the first div
+        // document.addEventListener('DOMContentLoaded', (event) => {
+        //     showDiv('div1');
+        // });
+    </script>
+</body>
+</html>

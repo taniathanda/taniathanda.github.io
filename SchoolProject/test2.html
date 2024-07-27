@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide/Show Elements</title>
+    <style>
+        .content {
+            display: none; /* Hide all divs by default */
+        }
+
+        .content.show {
+            display: block; /* Show the divs */
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="showAll()">Show All</button>
+        <button onclick="hideAll()">Hide All</button>
+    </div>
+
+    <div class="main">
+        <div class="content1">
+            <p>Dreamscape staff and faculty are here to support you along your post-secondary journey and beyond. 
+                Do you have a question but are not sure where to start? Choose from one of the options</p>
+        </div>
+        <div class="content">
+            <p>Dreamscape staff and faculty are here to support you along your post-secondary journey and beyond. 
+                Do you have a question but are not sure where to start? Choose from one of the options</p>
+        </div>
+        <div class="content">
+            <p>Dreamscape staff and faculty are here to support you along your post-secondary journey and beyond. 
+                Do you have a question but are not sure where to start? Choose from one of the options</p>
+        </div>
+    </div>
+
+    <script>
+        function showAll() {
+            const elements1 = document.querySelectorAll('.main');
+            elements1.forEach(element => {
+                element.classList.remove('show');
+            });
+
+            const elements = document.querySelectorAll('.main');
+            elements.forEach(element => {
+                element.classList.add('show');
+            });
+        }
+
+        function hideAll() {
+            const elements = document.querySelectorAll('.main');
+            elements.forEach(element => {
+                element.classList.remove('show');
+            });
+        }
+
+        // Optionally, initially show all elements
+        document.addEventListener('DOMContentLoaded', () => {
+            showAll();
+        });
+    </script>
+</body>
+</html>
