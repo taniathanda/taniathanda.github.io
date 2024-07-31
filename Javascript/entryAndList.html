@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: red;">Daily List</h1>
+    <form action="" name="myForm">
+		<label for="date">Date</label>
+		<input type="text" name="date"><br>
+		<label for="date">Name</label>
+		<input type="text" name="name"><br>
+		<label for="date">Price</label>
+		<input type="number" name="price"><br>
+		<button type="button" onclick="showData()">Save</button> 
+        <!-- <button type="button" onclick="showTotal()">Total</button>  -->
+	</form>
+    <h1>Daily Spend List</h1>
+    <table border="1" cellpadding="30" cellspacing="1">
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Name</th>
+				<th>Price</th> 
+			</tr>
+		</thead>
+		<tbody id="myBody">
+		</tbody>
+	</table>
+
+    <script>
+		var dailylist = [];
+		function showData(){
+		//get from data
+		let date = document.myForm.date.value;
+		let name = document.myForm.name.value;
+		let price = document.myForm.price.value;
+        
+		console.log(date,name,price);
+			//creating an object
+			let daily_obj = { 
+				daily_date : date,
+				daily_name : name,
+				daily_price : price
+			}
+			//console.log(student)
+			//push data into array
+			dailylist.push(daily_obj);
+			//console.log(dailylist);
+			getData();
+		}
+		function getData()
+		{
+			let html = '';  let total = 0;
+			for (let i=0; i<dailylist.length; i++){
+			let dailyobj = dailylist[i];
+			html += `<tr>
+						<td>${i+1}</td>
+						<td>${dailyobj.daily_date}</td>
+						<td>${dailyobj.daily_name}</td>
+						<td>${dailyobj.daily_price}</td>
+					 </tr>`; 
+
+            total += parseInt(document.myForm.price.value);
+            console.log(document.myForm.price.value);
+            console.log(total);
+			}
+
+            html += `<tr>
+						<td colspan=3 text-align="center">Total</td> 
+						<td>${total}</td>
+					 </tr>`; 
+			document.getElementById('myBody').innerHTML = html;
+		}
+        function showTotal(){
+
+        }
+	</script>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        form{
+            width: 40%;
+            margin: auto;
+        }
+        input{
+            width: 100%;
+            padding: 10px 0px;
+        }
+        button{
+            padding: 0px;
+            margin-top: 30px;
+        }
+        label{
+            margin-top: 40px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: red;">Your Login</h1>
+
+    <form action="home.php" method="post" onsubmit="return checkValidation()">
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email"><br>
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password"><br>
+        <p id="passwordErrorMessage"></p>
+		 
+        <button type="submit">Login</button>  
+		<!-- <button type="button" onclick="checkValidation()">Save</button>   -->
+	</form>
+    <script>
+        function checkValidation(){
+            let email =document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            if (email == "" && password == "")
+            {
+                let emailError = document.getElementById('email');
+                let emailErrorMessage = document.getElementById('emailErrorMessage');
+                emailError.style.border = "1px solid red";
+                emailErrorMessage.innerHTML = "Please fill your email";
+                emailErrorMessage.style.color = "red";
+                emailErrorMessage.style.margin = "0px";
+
+                let passwordError = document.getElementById('email');
+                let passwordErrorMessage = document.getElementById('emailErrorMessage');
+                passwordError.style.border = "1px solid red";
+                passwordErrorMessage.innerHTML = "Please fill your email";
+                passwordErrorMessage.style.color = "red";
+                passwordErrorMessage.style.margin = "0px";
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
