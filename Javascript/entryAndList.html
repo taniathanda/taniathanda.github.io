@@ -9,7 +9,7 @@
     <h1 style="text-align: center; color: red;">Daily List</h1>
     <form action="" name="myForm">
 		<label for="date">Date</label>
-		<input type="text" name="date"><br>
+		<input type="date" name="date"><br>
 		<label for="date">Name</label>
 		<input type="text" name="name"><br>
 		<label for="date">Price</label>
@@ -21,6 +21,7 @@
     <table border="1" cellpadding="30" cellspacing="1">
 		<thead>
 			<tr>
+				<th>No.</th>
 				<th>Date</th>
 				<th>Name</th>
 				<th>Price</th> 
@@ -31,16 +32,18 @@
 	</table>
 
     <script>
-		var dailylist = [];
+		var dailylist = [];let total = 0;
+
 		function showData(){
 		//get from data
 		let date = document.myForm.date.value;
 		let name = document.myForm.name.value;
 		let price = document.myForm.price.value;
         
-		console.log(date,name,price);
+		//console.log(date,name,price);
 			//creating an object
 			let daily_obj = { 
+				daily_no : 0,
 				daily_date : date,
 				daily_name : name,
 				daily_price : price
@@ -48,24 +51,41 @@
 			//console.log(student)
 			//push data into array
 			dailylist.push(daily_obj);
-			//console.log(dailylist);
+
+
 			getData();
 		}
+
 		function getData()
 		{
-			let html = '';  let total = 0;
+			let html = '';  
+
+			//console.log(dailylist[0][1]);
 			for (let i=0; i<dailylist.length; i++){
-			let dailyobj = dailylist[i];
+			let dailyobj = dailylist[i]; 
+
+			// const date = new date(`${dailyobj.daily_date}`);
+			// const day = date.day;
+			// const month = date.month;
+			// const year = date.year;
+			// let datevalue = day + "/" + month + "/" + year;
+			// console.log (datevalue);
+	
 			html += `<tr>
 						<td>${i+1}</td>
 						<td>${dailyobj.daily_date}</td>
 						<td>${dailyobj.daily_name}</td>
 						<td>${dailyobj.daily_price}</td>
 					 </tr>`; 
+				
+					 //console.log("Row " + i + "=" + dailylist[i+1][2].value);
+			
+			if (i==0) total = 0;
 
-            total += parseInt(document.myForm.price.value);
-            console.log(document.myForm.price.value);
-            console.log(total);
+            total += parseInt(`${dailyobj.daily_price}`);
+			//total = 0;
+            // console.log(document.myForm.price.value);
+            //console.log(total);
 			}
 
             html += `<tr>
@@ -74,10 +94,8 @@
 					 </tr>`; 
 			document.getElementById('myBody').innerHTML = html;
 		}
-        function showTotal(){
-
-        }
+        
 	</script>
     
-</body>
+</body>		
 </html>
