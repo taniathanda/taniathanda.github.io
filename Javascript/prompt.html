@@ -1,0 +1,15 @@
+<h1 style="text-align: center; color: red;">Guess Game</h1>
+    <script>
+        let secrectNo = 7;
+        let userNo = prompt("Guess a Number between 1 to 20!");
+        while (secrectNo != userNo ) {
+            if (userNo > secrectNo) {
+                alert("Your number is greater than Secrect No, Please Try Again!");
+            }else{
+                alert("Your number is lower than Secrect No, Please Try Again!");
+            }
+            userNo = prompt("Guess a Number between 1 to 20!");
+        }
+
+        
+    </script>

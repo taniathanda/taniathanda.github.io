@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, provident, laboriosam cum, aliquam nostrum libero perferendis officiis labore sapiente molestiae cupiditate aspernatur doloribus optio possimus similique recusandae alias. Praesentium, facere?</p>
+    <button id="hideid">Hide</button>
+    <button id="showid">Show</button>
+    <button id="toggleid">Toggle</button>
+    <button id="fade-outID">Fade Out</button>
+    <button id="fade-inID">Fade In</button>
+    <button id="fade-toggleID">Fade Toggle</button>
+    <button id="fade-to-1">Fade To 1</button>
+    <button id="fade-to-2">Fade To 2</button>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        //Hide
+        $(document).ready(function(){
+            $('#hideid').click(function(){
+                $('p').hide(1000, function(){
+                    alert("p hide");
+                })
+            })
+        })
+
+        //Show
+        $('#showid').click(function(){
+            $('p').show('fast');
+        })
+
+        //Toggle
+        $('#toggleid').click(function(){
+            $('p').toggle('slow');
+        })
+
+        //Fade-Out
+        $('#fade-outID').click(function(){
+            $('p').fadeOut(3000); // 3 seconds
+        })
+
+        //Fade-In
+        $('#fade-inID').click(function(){
+            $('p').fadeIn(3000);
+        })
+
+        //Fade-Toggle
+        $('#fade-toggleID').click(function(){
+            $('p').fadeToggle(3000);
+        })
+
+        //Fade-to-1
+        $('#fade-to-1').click(function(){
+            $('p').fadeTo(2000,0.1);
+        })
+
+        //Fade-to-2 
+        $("#fade-to-2").click(function(){
+            $('p').fadeTo(2000,1);
+        })
+    </script>
+</body>
+</html>
