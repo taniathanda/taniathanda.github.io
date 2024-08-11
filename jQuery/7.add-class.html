@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Class</title>
+    <style>
+        .trip{
+            max-width: 250px;
+            background-color: green;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p  class="p-class">I want to go trip</p>
+
+    <button id="addclassID">Add Class</button>
+    <button id="removeclassID">Remove Class</button>
+    <button id="toggleclassID">Toggle Class</button>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $('#addclassID').click(function(){
+                    $('p').addClass('trip'); // 'trip' is class name above in css style , called that class
+                })
+
+                $('#removeclassID').click(function(){
+                    $('p').removeClass('trip');
+                })
+
+                $('#toggleclassID').click(function(){
+                    // $('p').toggle('trip');
+                    $('p').toggleClass('trip');
+                })
+            })
+    </script>
+</body>
+</html>

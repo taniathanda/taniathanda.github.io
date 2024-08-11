@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        .welcome{
+            background-color: red;
+            width: 30%;
+            height: 60%;
+            
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <button id="dblClickID">Double Click</button>
+    <p id="heinlearnID">Hein Learn</p>
+    <input type="text" name="" id="textboxID">
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#dblClickID').dblclick(function(){
+                alert("You did double click!");
+            })
+
+            $('#heinlearnID').mouseover(function(){
+                $(this).addClass('welcome');
+            })
+
+            $('#heinlearnID').mouseout(function(){
+                $(this).removeClass('welcome');
+            })
+
+            $('#textboxID').focus(function(){
+                $(this).css({'background-color': 'red', 'color':'white'})
+            })
+
+            $('#textboxID').mouseleave(function(){
+                $(this).css({'background-color': 'lightgray', 'color':'black'})
+            })
+        })
+    </script>
+    
+</body>
+</html>
