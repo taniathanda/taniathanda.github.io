@@ -49,9 +49,10 @@ body, h2, h3, p{
     font-size: x-small;
 }
 .tableclass{
-    width: 70%;
+    width: 60%;
     margin-left: 50px;
     margin-top: 10px;
+    text-align: left;
 }
 .Orderbutton{
     background-color: red;
