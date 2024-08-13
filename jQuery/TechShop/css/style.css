@@ -48,6 +48,18 @@ body, h2, h3, p{
     background-color: chartreuse;
     font-size: x-small;
 }
+.tableclass{
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.Orderbutton{
+    background-color: red;
+    width: 85px;
+    height: 30px;
+    color:  white;
+    margin-left: 50px;
+}
 /*----------------------------------------------------end nav----------------*/
 
 /*---------------------------------------------------start banner---------------*/
