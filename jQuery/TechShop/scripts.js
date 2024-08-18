@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    count();
     getData();
 
     function getData(){
@@ -21,10 +22,8 @@ $(document).ready(function(){
                         <td>${v.name}</td>
                         <td>${v.price} ${v.currency}</td>
                         <td>
-                            <button data-key="${i}" data-name="${v.name}" data-email="${v.price}"
-                            data-phone="${v.amount}">+</button> ${v.qty}
-                            <button data-key="${i}" data-name="${v.name}" data-email="${v.price}"
-                            data-phone="${v.amount}">-</button> 
+                            <button class="max" data-key="${i}">+</button> ${v.qty}
+                            <button class="min" data-key="${i}">-</button> 
                         </td>
                         <td>${v.qty * v.price} ${v.currency}</td> 
                         </tr>`;
@@ -42,8 +41,21 @@ $(document).ready(function(){
          }
     }
 
+    function count(){
+        let itemstring = localStorage.getItem('shops');
+        if(itemstring)
+        {
+            let itemArray = JSON.parse(itemstring);
+            if(itemArray != null)
+            {
+                let count = itemArray.length;
+                $("#count_item").text(count);
+            }
+        }
+    }
+
     $('.addToCart').click(function(){
-        alert("hello");
+        // alert("hello");
 
         let id =$(this).data('id'); // this means addToCart. data means getting attributes from "data-"" (data-id/data-name/data-price)
         let name = $(this).data('name');
@@ -86,5 +98,59 @@ $(document).ready(function(){
         let itemData = JSON.stringify(itemArray);
         localStorage.setItem('shops', itemData); // saving into local storage
 
+        count();
+    })
+
+    $('#tbody').on('click', '.min',function(){
+        let key = $(this).data('key');
+        let itemstring = localStorage.getItem('shops');
+        if(itemstring){
+            let itemsArray = JSON.parse(itemstring);
+
+            $.each(itemsArray, function(i,v){
+                if (i == key){
+                    v.qty--;
+                    if(v.qty ==0){
+                        itemsArray.splice(key,1) // splice is deleting, start from key and how many numbers to delete is 1
+                        //(start,number)
+                    }
+                }
+            });
+
+            let itemsData = JSON.stringify(itemsArray);
+            localStorage.setItem('shops', itemsData);
+
+            getData();
+            count();
+        }
+    })
+
+    $('#tbody').on('click', '.max',function(){
+        let key = $(this).data('key');
+        let itemstring = localStorage.getItem('shops');
+        if(itemstring){
+            let itemsArray = JSON.parse(itemstring);
+
+            $.each(itemsArray, function(i,v){
+                if (i == key){
+                    v.qty++; 
+                }
+            });
+
+            let itemsData = JSON.stringify(itemsArray);
+            localStorage.setItem('shops', itemsData);
+
+            getData();
+        }
+    })
+
+    $('#order_now').click(function(){
+        let ans = confirm('Are you sure to order?');
+        console.log(ans);
+        if(ans){
+            localStorage.removeItem('shops');
+            window.location.href = "index.html";
+        }
+        
     })
 })
